@@ -1,4 +1,5 @@
 import Color from './Color'
+import './ColorRenderer.css';
 
 const colors = [{
   hex: '#91A6FF',
@@ -17,11 +18,10 @@ const colors = [{
   name: 'Tart Orange'
 }]
 
-export default function ColorRenderer () {
+export default function ColorRenderer() {
   return (
-    <h2>
-      Use the Color component to render each
-       item in the colors array on the page!
-    </h2>
+    <section className='color-renderer__container'>
+      {colors.map(color => <Color key={color.name} hex={color.hex} name={color.name} />)}
+    </section>
   )
 }
