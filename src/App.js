@@ -1,10 +1,10 @@
 import './App.css'
-import ToggleWindowEvent from './06-add-window-event/ToggleWindowEvent'
+import PixelArt from './08-pixel-art/PixelArt'
 
 function App () {
   return (
     <div className='App'>
-      <ToggleWindowEvent />
+      <PixelArt />
     </div>
   )
 }
